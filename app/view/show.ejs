@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>研学资讯</title>
+	<!-- core CSS -->
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../public/css/animate.min.css" rel="stylesheet">
+    <link href="../public/css/owl.carousel.css" rel="stylesheet">
+    <link href="../public/css/owl.transitions.css" rel="stylesheet">
+    <link href="../public/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../public/js/html5shiv.js"></script>
+    <script src="../public/js/respond.min.js"></script>
+    <![endif]-->       
+  
+  <style>
+  #services{
+      padding: 0px
+  }
+  .section-header {
+    margin-bottom: 20px;
+}
+  body{
+      padding-top: 50px;
+  }
+  </style>
+</head><!--/head-->
+
+<body id="home" class="homepage">
+<section id="services" >
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown"><%-data[0].YX_NAME%></h2>
+                <p class="text-center wow fadeInDown"><%-data[0].YX_TITLE%></p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <%-data[0].YX_CONTENT%>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+     
+
+   
+
+
+
+
+    <footer id="footer">
+        <div class="container text-center">
+          All rights Copyright © 2018 | 重庆大师兄户外拓展
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="../public/js/jquery.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+
+    <script src="../public/js/owl.carousel.min.js"></script>
+    <script src="../public/js/mousescroll.js"></script>
+    <script src="../public/js/smoothscroll.js"></script>
+    <script src="../public/js/jquery.prettyPhoto.js"></script>
+    <script src="../public/js/jquery.isotope.min.js"></script>
+    <script src="../public/js/jquery.inview.min.js"></script>
+    <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/main.js"></script>
+	<script src="../public/js/scrolling-nav.js"></script>
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+
+    $("body").data("page", "frontpage");
+
+$("#owl-example").owlCarousel({ 
+        items:3,   
+/*        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [980,9],
+        itemsTablet: [768,5],
+        itemsTabletSmall: false,
+        itemsMobile : [479,4]*/
+})
+
+           
+
+    </script>
+</body>
+</html>
